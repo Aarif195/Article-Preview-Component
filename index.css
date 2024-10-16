@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  padding: 3rem 5rem;
+  background-color: hsl(210, 46%, 95%);
+}
+
+section {
+  /* border: 1px solid red; */
+  margin: 3rem auto;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.drawer {
+  display: flex;
+}
+
+.container {
+  padding: 1.5rem 2rem;
+}
+
+h3 {
+  color: hsl(217, 19%, 35%);
+  margin-top: 30px;
+}
+
+p {
+  color: hsl(212, 23%, 69%);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+
+  margin-top: 30px;
+}
+
+
+
+.mic {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mic img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.mic-1 {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+  margin-top: 30px;
+}
+
+
+
+.mic-1 h4 {
+  font-weight: 300;
+  font-size: 20px;
+  color: hsl(214, 17%, 51%);
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.mic-2 img {
+  border-radius: 100%;
+  /* border: 1px red solid; */
+  width: 25px;
+  height: 25px;
+  object-fit: cover;
+  padding: 7px;
+  box-shadow: 5 hsl(214, 17%, 51%);
+}
+
+.mic-1 span {
+  display: block;
+  color: hsl(212, 23%, 69%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MOBILE DESIGN */
+@media (max-width: 768px) {
+
+  body {
+    padding: 1rem 1rem;
+  }
+
+
+  .drawer,
+  .mic-1 {
+    flex-direction: column;
+  }
+
+  .mic {
+    flex-direction: row;
+    column-gap: 20px;
+    align-items: end;
+  }
+
+  .mic-1 {
+    flex-direction: row;
+  }
+
+  .mic img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+
+}
